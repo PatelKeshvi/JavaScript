@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#my-books">My Books</a></li>
+            <li><a href="#bookmark">Bookmark</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Add New Book</h1>
+        <form id="book-form">
+            <label>Book Name: <input type="text" id="book-name" required></label><br>
+            <label>Author Name: <input type="text" id="author-name" required></label><br>
+            <label>Book Description: <textarea id="book-description" required></textarea></label><br>
+            <label>Added Date: <input type="date" id="added-date" required></label><br>
+            <label>Book Category:
+                <select id="book-category" required>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Non-Fiction">Non-Fiction</option>
+                    <option value="Science">Science</option>
+                    <option value="History">History</option>
+                </select>
+            </label><br>
+            <label>Book Price: <input type="number" id="book-price" required></label><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="dashboard">
+        <h1>Dashboard</h1>
+        <div>
+            <label>Filter by Category:
+                <select id="filter-category">
+                    <option value="All">All</option>
+                    <option value="Fiction">Fiction</option>
+                    <option value="Non-Fiction">Non-Fiction</option>
+                    <option value="Science">Science</option>
+                    <option value="History">History</option>
+                </select>
+            </label>
+        </div>
+        <table id="book-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Description</th>
+                    <th>Added Date</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Buy</th>
+                    <th>Bookmark</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic Rows -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="my-books">
+        <h1>My Books</h1>
+        <table id="buy-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Description</th>
+                    <th>Added Date</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic Rows -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="bookmark">
+        <h1>Bookmark</h1>
+        <table id="bookmark-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Description</th>
+                    <th>Added Date</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic Rows -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
