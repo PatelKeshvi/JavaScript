@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Elsie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+            <div class="box">
+                <h1>It's a Music Time <i class="fa fa-music"></i></h1>
+                <div id="art">
+                </div>
+                <div class="title">
+                    <h2 id="song">Teri Yaadein</h2>
+                    <h3 id="singer">Shrey Singhal</h3>
+                </div>
+                <div class="tap">
+                    <button class="favorite" onclick="toggleFavorite(this)"><i class="fa fa-heart"></i></button>
+                    <button id="prev" onclick="playprev()"><i class="fa fa-step-backward"></i></button>
+                    <button id="playpause" onclick="playpause()"><i class="fa fa-play-circle pause"></i></button>
+                    <button id="next" onclick="playnext()"><i class="fa fa-step-forward"></i></button>
+                    <button class="bookmark" onclick="toggleBookmark(this)"><i class="fa fa-bookmark"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="child">
+            <div id="playlist">
+                <h1>My PlayList</h1>
+                <ul class="list">
+                    <li><span onclick="playthis(0)">Teri Galiyan</span> - Ankit Tiwari</li>
+                    <li><span onclick="playthis(1)">Khairiyat</span> - Arijit Singh</li>
+                    <li><span onclick="playthis(2)">O Khuda</span> - Amaal Mallik</li>
+                    <li><span onclick="playthis(3)">Pal Pal Dil Ke Paas</span> - Unknown</li>
+                    <li><span onclick="playthis(4)">Bol Do Na Zara</span> - Armaan Malik</li>
+                    <li><span onclick="playthis(5)">Teri Mitti</span> - B Praak</li>
+                    <li><span onclick="playthis(6)">Tu Hi Yaar Mera</span> - Arijit Singh</li>
+                    <li><span onclick="playthis(7)">Tujhse Naraz Nahi Zindagi</span> - Sanam</li>
+                    <li><span onclick="playthis(8)">Fast and Furious BGM</span> - Unknown</li>
+                    <li><span onclick="playthis(9)">Kaun Hai Woh</span> - Kailash Kher</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+body{
+  background: #121212;
+  font-family: 'Elsie', cursive;
+  color: #FFFFFF;
+}
+
+.parent{
+  display: flex;
+  margin-top: 80px;
+}
+
+.child{
+  width: 50%;
+}
+
+.box, #playlist {
+  margin: 0 auto;
+  width: 400px; 
+  height: 491px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.2); 
+  background: linear-gradient(to right, #333333, #444444);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#art{
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+  background-image: url('./1.jpg');
+  background-size: cover;
+  border-radius: 50%;
+}
+
+h1, h2, h3, h6{
+  text-align: center;
+  color: #FFFFFF; 
+}
+
+.tap{
+  margin-top: 15px;
+  text-align: center;
+}
+
+.tap i{
+  padding: 10px;
+  color: #1DB954; 
+}
+
+button:hover{
+  background-color: #aae6bf; 
+  color: #FFFFFF; 
+  cursor: pointer;
+}
+
+#playpause{
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+
+button{
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  margin: 10px;
+  background-color: #333333; 
+  color: #FFFFFF; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  margin: 20px 0;
+  color: #FFFFFF; 
+}
+
+li:hover{
+  color: #1DB954; 
+  cursor: pointer;
+  transition: color 0.3s; 
+}
+
+#playlist span{
+  font-weight: bold;
+  color: #1DB954; 
+}
+
+#playlist span:hover{
+  cursor: pointer;
+  color: #1ED760; 
+  transition: color 0.3s; 
+}
+
+.favorited i {
+  color: #FF0000; /* Red color for favorited */
+}
+
+.bookmarked i {
+  color: #FFD700; /* Gold color for bookmarked */
+}
