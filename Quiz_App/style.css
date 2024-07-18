@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #303030; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+}
+
+.qz h1 {
+    color: #aed581; /* Light green color */
+}
+
+.qz button {
+    display: block;
+    width: 40%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 2px solid #8bc34a; /* Medium green border */
+    border-radius: 50px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #558b2f, #8bc34a); /* Gradient background */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.qz button:hover {
+    background-color: #33691e; /* Dark green */
+    color: #ffffff; /* White text color on hover */
+    opacity: 0.9;
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.add {
+    margin-top: 30px;
+}
+
+.frm {
+    background: #424242; /* Dark background */
+    padding: 90px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 60%;
+    margin: auto;
+}
+
+.frm input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #8bc34a; /* Medium green border */
+    border-radius: 5px;
+    background-color: #303030; /* Dark input background */
+    color: #e0e0e0; /* Light input text color */
+    transition: border 0.3s ease;
+}
+
+.frm input[type="text"]:focus {
+    border-color: #aed581; /* Light green border on focus */
+}
+
+.frm input[type="submit"] {
+    margin: auto;
+    padding: 15px 25px;
+    background: linear-gradient(45deg, #7cb342, #8bc34a); /* Gradient background */
+    color: #303030; /* Dark text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.frm input[type="submit"]:hover {
+    background-color: #7cb342; /* Slightly darker green background */
+    color: #ffffff; /* White text color */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+#frm-t {
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+}
+
+/* Additional styles for new design elements */
+.card {
+    background: #424242;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px;
+    padding: 20px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+    font-size: 24px;
+    color: #aed581;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+/* Example of using the new card style */
+.example-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.example-card-container .card {
+    width: 45%;
+    margin: 10px;
+}
