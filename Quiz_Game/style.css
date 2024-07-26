@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0f28;
+    color: #f4f4f9;
+    margin: auto;
+    padding: 20px;
+    width: 50%;
+}
+
+.qz h1 {
+    color: #fff;
+}
+
+.qz button {
+    display: block;
+    width: 40%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 2px solid #444c6a;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #1b2a49;
+    color: #f4f4f9;
+    transition: background-color 0.3s ease;
+}
+
+.qz button:hover {
+    background-color: #2b3a69;
+}
+
+.add {
+    margin-top: 30px;
+}
+
+.frm {
+    background: #1b2a49;
+    padding: 90px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 60%;
+    margin: auto;
+    color: #f4f4f9;
+}
+
+.frm input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #444c6a;
+    border-radius: 5px;
+    background-color: #0a0f28;
+    color: #f4f4f9;
+}
+
+.frm input[type="submit"] {
+    margin: auto;
+    padding: 15px 25px;
+    background-color: #1b3a6a;
+    color: #f4f4f9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.frm input[type="submit"]:hover {
+    background-color: #2b4a7a;
+}
+
+#frm-t {
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    margin: 10px;
+}
+
+.timer {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
