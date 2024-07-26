@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <div class="title">Stop Watch</div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-md-auto gap-2">
+                    <li class="nav-item rounded">
+                        <a class="nav-link active" aria-current="page" href="index.html"><i
+                                class="bi bi-house-fill me-2"></i>Home</a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link" href="counter2.html" target="_blank"><i
+                                class="bi bi-people-fill me-2"></i>Counter2</a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link" href="counter3.html" target="_blank"><i
+                                class="bi bi-telephone-fill me-2"></i>Counter3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="vh-100 d-flex justify-content-center align-items-center">
+
+
+        <div id="c-main">
+            <h1 id="count">450</h1>
+            <h1 id="c2">250</h1>
+            <h1 id="c3">150</h1>
+            <h1 id="c4">350</h1>
+        </div>
+
+</body>
+
+<script>
+    let maxcount = +document.querySelector("#count").innerHTML;
+    let maxcount2 = +document.querySelector("#c2").innerHTML;
+    let maxcount3 = +document.querySelector("#c3").innerHTML;
+    let maxcount4 = +document.querySelector("#c4").innerHTML;
+
+    let count = 0;
+    let id = setInterval(() => {
+        count += 1;
+        document.querySelector("#count").innerHTML = count;
+        if (count === maxcount) {
+            clearInterval(id);
+            setTimeout(startCount2, 1000);
+        }
+    }, 10);
+
+    const startCount2 = () => {
+        let count2 = 0;
+        let id2 = setInterval(() => {
+            count2 += 1;
+            document.querySelector("#c2").innerHTML = count2;
+            if (count2 === maxcount2) {
+                clearInterval(id2);
+                setTimeout(startCount3, 1000);
+            }
+        }, 10);
+    }
+
+    const startCount3 = () => {
+        let count3 = 0;
+        let id3 = setInterval(() => {
+            count3 += 1;
+            document.querySelector("#c3").innerHTML = count3;
+            if (count3 === maxcount3) {
+                clearInterval(id3);
+                setTimeout(startCount4, 1000);
+            }
+        }, 10);
+    }
+
+    const startCount4 = () => {
+        let count4 = 0;
+        let id4 = setInterval(() => {
+            count4 += 1;
+            document.querySelector("#c4").innerHTML = count4;
+            if (count4 === maxcount4) {
+                clearInterval(id4);
+            }
+        }, 10);
+    }
+</script>
+
+</html>
