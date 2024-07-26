@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Corner</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #343030;
+            font-family: Arial, sans-serif;
+        }
+        
+        #navbar {
+            background-color: #1e1e1e;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        #userDisplay {
+            background-color: #1e1e1e;
+            padding: 10px;
+            text-align: center;
+            margin-top: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .form-control {
+            margin: 5px;
+            background-color: #333;
+            color: #e0e0e0;
+            border: 1px solid #444;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        
+        .btn-outline-light {
+            color: #e0e0e0;
+            border-color: #444;
+        }
+        
+        .btn-outline-light:hover {
+            background-color: #333;
+            border-color: #555;
+        }
+        
+        #foodContainer {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .food-item {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 10px;
+            transition: transform 0.2s;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .food-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .food-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">Food Corner</div>
+
+    <!-- Filters and Sorting Section -->
+    <div class="container mt-5">
+        <form class="form-inline my-2 my-lg-0" id="search-form">
+            <select id="categoryFilter" class="form-control mr-sm-2">
+                <option value="">All Categories</option>
+            </select>
+            <select id="sortBy" class="form-control mr-sm-2">
+                <option value="priceAsc">Price: Low to High</option>
+                <option value="priceDesc">Price: High to Low</option>
+                <option value="rating">Rating</option>
+                <option value="deliveryTimeAsc">Delivery Time: Short to Long</option>
+                <option value="deliveryTimeDesc">Delivery Time: Long to Short</option>
+            </select>
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" id="searchInput">
+            <input class="form-control mr-sm-2" type="text" placeholder="Enter your location" id="locationInput">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="button" id="searchButton">Search</button>
+        </form>
+    </div>
+
+    <!-- Food Container -->
+    <div id="foodContainer" class="container mt-5"></div>
+
+    <script src="/js/index.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
