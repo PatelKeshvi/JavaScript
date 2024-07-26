@@ -1,0 +1,216 @@
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+.navbar-brand {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 58px;
+    height: 58px;
+}
+
+.navbar-nav .nav-item:hover {
+    background-color: rgba(100, 149, 237, 0.4);
+}
+
+
+/* For Home page counter */
+
+body {
+    text-align: center;
+    background-color: #F0F0F0;
+    font-family: "Source Sans Pro";
+    color: #333333;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#time {
+    font-size: 70px;
+    position: absolute;
+    top: 25%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.buttons {
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button {
+    width: 100px;
+    padding: 20px;
+    font-size: 20px;
+    background: #2E8B57;
+    cursor: pointer;
+    color: white;
+    font-size: larger;
+    font-weight: 800;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background: #3CB371;
+    color: #FFFFFF;
+}
+
+
+/* For Counter 2 */
+
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp|Uncial+Antiqua');
+body {
+    overflow: hidden;
+}
+
+main {
+    background-position: center;
+    color: #333333;
+    text-align: center;
+    min-height: 100vh;
+    font-size: 40px;
+    font-family: 'Uncial Antiqua', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    animation: neon .08s ease-in-out infinite alternate;
+}
+
+#Time {
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 671px) {
+    #Time {
+        font-size: 70px;
+        font-family: 'Uncial Antiqua', serif;
+    }
+}
+
+.text {
+    font-family: 'Uncial Antiqua', serif;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.nav-link {
+    text-decoration: none;
+    text-shadow: none;
+}
+
+#c-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    text-align: center;
+}
+
+.counter {
+    height: 200px;
+    width: 200px;
+    border: 10px solid #333333;
+    font-size: 50px;
+    font-weight: 800;
+    padding: 55px;
+    border-radius: 50%;
+    background: linear-gradient(#FFD700, #FFA500);
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.counter:hover {
+    background: linear-gradient(#FFA500, #FFD700);
+    border-color: #FFFFFF;
+    color: #000000;
+}
+
+
+/* Dark mode styles */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #E0E0E0;
+    }
+    .navbar-brand {
+        filter: invert(1);
+    }
+    .navbar-nav .nav-item:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    .button {
+        background: #333333;
+        color: #E0E0E0;
+    }
+    .button:hover {
+        background: #555555;
+        color: #FFFFFF;
+    }
+    main {
+        color: #E0E0E0;
+    }
+    .counter {
+        background: linear-gradient(#444444, #777777);
+        border-color: #E0E0E0;
+        color: #E0E0E0;
+    }
+    .counter:hover {
+        background: linear-gradient(#777777, #444444);
+        border-color: #FFFFFF;
+        color: #121212;
+    }
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+.dark-mode .navbar-brand {
+    filter: invert(1);
+}
+
+.dark-mode .navbar-nav .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .button {
+    background: #333333;
+    color: #E0E0E0;
+}
+
+.dark-mode .button:hover {
+    background: #555555;
+    color: #FFFFFF;
+}
+
+.dark-mode main {
+    color: #E0E0E0;
+}
+
+.dark-mode .counter {
+    background: linear-gradient(#444444, #777777);
+    border-color: #E0E0E0;
+    color: #E0E0E0;
+}
+
+.dark-mode .counter:hover {
+    background: linear-gradient(#777777, #444444);
+    border-color: #FFFFFF;
+    color: #121212;
+}
