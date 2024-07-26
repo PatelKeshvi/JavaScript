@@ -1,0 +1,90 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(#f0f4f8, #d9e4ea);
+    font-family: 'Roboto', sans-serif;
+}
+
+.editor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.code {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+}
+
+.CodeMirror {
+    height: 75px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+}
+
+.CodeMirror-scroll {
+    overflow: hidden !important;
+}
+
+.CodeMirror-gutters {
+    background: #2d2d2d;
+    border: none;
+}
+
+.CodeMirror-lines {
+    padding: 12px 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+}
+
+.CodeMirror-selected {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.CodeMirror-focused {
+    outline: none;
+}
+
+iframe {
+    border: 1px solid #444;
+    height: 50vh;
+    width: 90vw;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-family: 'Merriweather', serif;
+    font-size: 32px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.label {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+}
