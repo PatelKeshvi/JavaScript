@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap");
+
+/* General Styles */
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+}
+
+h1 {
+    position: relative;
+    left: 200px;
+}
+
+main {
+    margin-left: var(--sb-width);
+    padding: 1rem 2rem;
+    transition: margin-left 0.5s ease-in-out;
+    width: 100%;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.courses,
+.cart-container {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.course-card {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 1rem);
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: scale(1.02);
+}
+
+.course-card img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+.course-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.course-card p {
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .course-card {
+        width: calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .course-card {
+        width: 100%;
+    }
+}
+
+
+/* Form Styles */
+
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Cart Styles */
+
+.cart-summary {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.cart-summary h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--sb-width);
+    background: #333;
+    color: #fff;
+    padding-top: 2rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin: 1rem 0;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+}
+
+.sidebar i {
+    margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        overflow: hidden;
+    }
+    .sidebar.active {
+        width: 250px;
+    }
+}
